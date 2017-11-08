@@ -59,16 +59,23 @@ final class PersonController {
     private func convertToUsers(withData data: Data) throws -> [Person] {
         var tempList = [Person]()
         
-//        let jsonParsed = try JSON(data: data)
+        let json = try! JSONSerialization.jsonObject(with: data, options: []) as! [String:Any]
         
-//        if let resultsOnJson = jsonParsed["results"].array {
-//            for elementFromJSON in resultsOnJson {
-//                let firstName = elementFromJSON["name"]["first"].stringValue
-//                let userFromJSON = CustomObject(withName: firstName)
-//
-//                tempList.append(userFromJSON)
-//            }
-//        }
+        if let results = json["results"] as? [[String:Any]]{
+            for jsonPerson in results {
+                guard let email = jsonPerson["email"] as? String,
+                let names = jsonPerson["name"] as? [String:Any],
+                let firstName = names["first"] as? String
+                else {
+                    print("Not possible to find the email and first name.")
+                    break
+                }
+                
+                tempList.append(Person(name: firstName, email: email))
+            }
+        } else {
+            print("No results tag found in response JSON.")
+        }
         
         return tempList
     }
