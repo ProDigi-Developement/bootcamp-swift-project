@@ -8,20 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		9529AC321FB392A3000C9BDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9529AC311FB392A3000C9BDC /* AppDelegate.swift */; };
-		9529AC341FB392A3000C9BDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9529AC331FB392A3000C9BDC /* ViewController.swift */; };
+		9529AC341FB392A3000C9BDC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9529AC331FB392A3000C9BDC /* MainViewController.swift */; };
 		9529AC371FB392A3000C9BDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9529AC351FB392A3000C9BDC /* Main.storyboard */; };
 		9529AC391FB392A3000C9BDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9529AC381FB392A3000C9BDC /* Assets.xcassets */; };
 		9529AC3C1FB392A3000C9BDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9529AC3A1FB392A3000C9BDC /* LaunchScreen.storyboard */; };
+		9529AC451FB3A20A000C9BDC /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9529AC441FB3A20A000C9BDC /* Person.swift */; };
+		9529AC481FB3A58E000C9BDC /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9529AC471FB3A58E000C9BDC /* PersonController.swift */; };
+		9529AC4C1FB3AB78000C9BDC /* DefaultButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9529AC4B1FB3AB78000C9BDC /* DefaultButtonCell.xib */; };
+		9529AC4E1FB3AC48000C9BDC /* DefaultButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9529AC4D1FB3AC48000C9BDC /* DefaultButtonCell.swift */; };
+		9529AC531FB3B2EE000C9BDC /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9529AC521FB3B2EE000C9BDC /* ExampleViewController.swift */; };
+		9529AC561FB3B7D9000C9BDC /* PersonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9529AC551FB3B7D9000C9BDC /* PersonCell.xib */; };
+		9529AC581FB3B7E3000C9BDC /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9529AC571FB3B7E3000C9BDC /* PersonCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9529AC2E1FB392A3000C9BDC /* Course Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Course Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9529AC311FB392A3000C9BDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9529AC331FB392A3000C9BDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9529AC331FB392A3000C9BDC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		9529AC361FB392A3000C9BDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9529AC381FB392A3000C9BDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9529AC3B1FB392A3000C9BDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9529AC3D1FB392A3000C9BDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9529AC441FB3A20A000C9BDC /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		9529AC471FB3A58E000C9BDC /* PersonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
+		9529AC4B1FB3AB78000C9BDC /* DefaultButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefaultButtonCell.xib; sourceTree = "<group>"; };
+		9529AC4D1FB3AC48000C9BDC /* DefaultButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButtonCell.swift; sourceTree = "<group>"; };
+		9529AC521FB3B2EE000C9BDC /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
+		9529AC551FB3B7D9000C9BDC /* PersonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonCell.xib; sourceTree = "<group>"; };
+		9529AC571FB3B7E3000C9BDC /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +68,77 @@
 		9529AC301FB392A3000C9BDC /* Course Project */ = {
 			isa = PBXGroup;
 			children = (
-				9529AC311FB392A3000C9BDC /* AppDelegate.swift */,
-				9529AC331FB392A3000C9BDC /* ViewController.swift */,
-				9529AC351FB392A3000C9BDC /* Main.storyboard */,
-				9529AC381FB392A3000C9BDC /* Assets.xcassets */,
-				9529AC3A1FB392A3000C9BDC /* LaunchScreen.storyboard */,
 				9529AC3D1FB392A3000C9BDC /* Info.plist */,
+				9529AC311FB392A3000C9BDC /* AppDelegate.swift */,
+				9529AC381FB392A3000C9BDC /* Assets.xcassets */,
+				9529AC4F1FB3B29A000C9BDC /* Example */,
+				9529AC3A1FB392A3000C9BDC /* LaunchScreen.storyboard */,
+				9529AC351FB392A3000C9BDC /* Main.storyboard */,
+				9529AC491FB3A5F4000C9BDC /* View */,
 			);
 			path = "Course Project";
+			sourceTree = "<group>";
+		};
+		9529AC431FB3A1EF000C9BDC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9529AC441FB3A20A000C9BDC /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9529AC461FB3A583000C9BDC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9529AC471FB3A58E000C9BDC /* PersonController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9529AC491FB3A5F4000C9BDC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9529AC4A1FB3AB57000C9BDC /* Cell */,
+				9529AC331FB392A3000C9BDC /* MainViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9529AC4A1FB3AB57000C9BDC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9529AC4B1FB3AB78000C9BDC /* DefaultButtonCell.xib */,
+				9529AC4D1FB3AC48000C9BDC /* DefaultButtonCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		9529AC4F1FB3B29A000C9BDC /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				9529AC501FB3B2B6000C9BDC /* View */,
+				9529AC461FB3A583000C9BDC /* Controller */,
+				9529AC431FB3A1EF000C9BDC /* Model */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		9529AC501FB3B2B6000C9BDC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9529AC541FB3B7CC000C9BDC /* Cell */,
+				9529AC521FB3B2EE000C9BDC /* ExampleViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9529AC541FB3B7CC000C9BDC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9529AC551FB3B7D9000C9BDC /* PersonCell.xib */,
+				9529AC571FB3B7E3000C9BDC /* PersonCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +203,8 @@
 				9529AC3C1FB392A3000C9BDC /* LaunchScreen.storyboard in Resources */,
 				9529AC391FB392A3000C9BDC /* Assets.xcassets in Resources */,
 				9529AC371FB392A3000C9BDC /* Main.storyboard in Resources */,
+				9529AC561FB3B7D9000C9BDC /* PersonCell.xib in Resources */,
+				9529AC4C1FB3AB78000C9BDC /* DefaultButtonCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,8 +215,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9529AC341FB392A3000C9BDC /* ViewController.swift in Sources */,
+				9529AC481FB3A58E000C9BDC /* PersonController.swift in Sources */,
+				9529AC4E1FB3AC48000C9BDC /* DefaultButtonCell.swift in Sources */,
+				9529AC451FB3A20A000C9BDC /* Person.swift in Sources */,
+				9529AC341FB392A3000C9BDC /* MainViewController.swift in Sources */,
 				9529AC321FB392A3000C9BDC /* AppDelegate.swift in Sources */,
+				9529AC531FB3B2EE000C9BDC /* ExampleViewController.swift in Sources */,
+				9529AC581FB3B7E3000C9BDC /* PersonCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
