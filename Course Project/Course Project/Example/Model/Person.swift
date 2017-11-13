@@ -9,11 +9,17 @@
 import Foundation
 
 public class Person {
-    public let name: String
+    public let firstName: String
+    public let lastName: String
     public let email: String
     
-    init(name: String, email: String) {
-        self.name = name
+    init(firstName: String, lastName: String, email: String) {
+        self.firstName = firstName
+        self.lastName = lastName
         self.email = email
+    }
+    
+    public func fullName() -> String {
+        return "\(self.firstName) \(self.lastName)"
     }
 }
