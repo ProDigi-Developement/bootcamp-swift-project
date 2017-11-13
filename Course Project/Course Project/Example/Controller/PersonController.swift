@@ -65,13 +65,14 @@ final class PersonController {
             for jsonPerson in results {
                 guard let email = jsonPerson["email"] as? String,
                 let names = jsonPerson["name"] as? [String:Any],
-                let firstName = names["first"] as? String
+                let firstName = names["first"] as? String,
+                let lastName = names["last"] as? String
                 else {
                     print("Not possible to find the email and first name.")
                     break
                 }
                 
-                tempList.append(Person(name: firstName, email: email))
+                tempList.append(Person(firstName: firstName, lastName: lastName, email: email))
             }
         } else {
             print("No results tag found in response JSON.")

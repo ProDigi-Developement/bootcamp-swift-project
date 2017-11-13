@@ -10,11 +10,9 @@ import UIKit
 
 class PersonCell: UITableViewCell {
     @IBOutlet private weak var nameLabel: UILabel!
-    @IBOutlet private weak var emailLabel: UILabel!
     
     public func fillCell(withPerson person: Person) {
-        self.nameLabel.text = person.name
-        self.emailLabel.text = person.email
+        self.nameLabel.text = person.fullName()
     }
 }
 

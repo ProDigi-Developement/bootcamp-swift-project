@@ -98,8 +98,8 @@
 		9529AC491FB3A5F4000C9BDC /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9529AC4A1FB3AB57000C9BDC /* Cell */,
 				9529AC331FB392A3000C9BDC /* MainViewController.swift */,
+				9529AC4A1FB3AB57000C9BDC /* Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -107,8 +107,8 @@
 		9529AC4A1FB3AB57000C9BDC /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				9529AC4B1FB3AB78000C9BDC /* DefaultButtonCell.xib */,
 				9529AC4D1FB3AC48000C9BDC /* DefaultButtonCell.swift */,
+				9529AC4B1FB3AB78000C9BDC /* DefaultButtonCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -126,8 +126,8 @@
 		9529AC501FB3B2B6000C9BDC /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9529AC541FB3B7CC000C9BDC /* Cell */,
 				9529AC521FB3B2EE000C9BDC /* ExampleViewController.swift */,
+				9529AC541FB3B7CC000C9BDC /* Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -135,8 +135,8 @@
 		9529AC541FB3B7CC000C9BDC /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				9529AC551FB3B7D9000C9BDC /* PersonCell.xib */,
 				9529AC571FB3B7E3000C9BDC /* PersonCell.swift */,
+				9529AC551FB3B7D9000C9BDC /* PersonCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
