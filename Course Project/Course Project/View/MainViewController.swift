@@ -9,7 +9,7 @@
 import UIKit
 
 class MainViewController: UITableViewController {
-    private let projects: [String] = ["ProDigi",]
+    private let projects: [String] = ["ProDigi", "Araceli Teixeira"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +43,8 @@ class MainViewController: UITableViewController {
         switch indexPath.row {
         case 0:
             segueId = "showProDigiScreen"
+        case 1:
+            segueId = "showAraceliTeixeiraScreen"
         default:
             print("No specific action.")
         }

@@ -26,6 +26,7 @@
                     <navigationItem key="navigationItem" title="Projects" id="s9I-YZ-e41"/>
                     <connections>
                         <segue destination="agh-ms-bEh" kind="show" identifier="showProDigiScreen" id="eqB-q2-mBa"/>
+                        <segue destination="UIj-6E-ZZx" kind="show" identifier="showAraceliTeixeiraScreen" id="BjO-yW-1h5"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oXb-zb-V29" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -62,6 +63,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aZT-Hg-WyF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1919.2" y="-743.47826086956525"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="kYP-06-fMV">
+            <objects>
+                <viewController id="UIj-6E-ZZx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5G1-Jy-tqI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="11w-oK-hdP"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jn6-gq-7w0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1919" y="18"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xN2-Ry-zgi">
