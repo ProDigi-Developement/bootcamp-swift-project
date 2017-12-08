@@ -92,7 +92,20 @@
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vyo-b7-tDE">
                                         <rect key="frame" x="0.0" y="299" width="375" height="299"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label on top left" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auY-Hw-Osh">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="auY-Hw-Osh" secondAttribute="trailing" id="Jfk-xM-HzC"/>
+                                            <constraint firstItem="auY-Hw-Osh" firstAttribute="leading" secondItem="vyo-b7-tDE" secondAttribute="leading" id="PGl-DY-e6p"/>
+                                            <constraint firstItem="auY-Hw-Osh" firstAttribute="top" secondItem="vyo-b7-tDE" secondAttribute="top" id="qUV-9x-2k6"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                             </stackView>
