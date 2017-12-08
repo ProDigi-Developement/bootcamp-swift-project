@@ -88,9 +88,17 @@
                                 <rect key="frame" x="139" y="144.5" width="96" height="30"/>
                                 <state key="normal" title="Center Button"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label on top left" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NPo-1Q-NWe">
+                                <rect key="frame" x="10" y="318.5" width="124" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="NPo-1Q-NWe" firstAttribute="centerY" secondItem="gOG-WJ-0iR" secondAttribute="centerY" constant="10" id="CfN-9g-EKD"/>
+                            <constraint firstItem="NPo-1Q-NWe" firstAttribute="leading" secondItem="gOG-WJ-0iR" secondAttribute="leading" constant="10" id="XsJ-I0-fjP"/>
                             <constraint firstItem="1p9-oo-IiS" firstAttribute="centerX" secondItem="gOG-WJ-0iR" secondAttribute="centerX" id="Zzg-17-fhB"/>
                             <constraint firstItem="1p9-oo-IiS" firstAttribute="centerY" secondItem="gOG-WJ-0iR" secondAttribute="centerY" multiplier="0.5" id="xx1-nY-1ae"/>
                         </constraints>
