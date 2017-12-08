@@ -99,11 +99,18 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MfL-Yc-f0k">
+                                                <rect key="frame" x="187.5" y="149.5" width="187.5" height="149.5"/>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="auY-Hw-Osh" secondAttribute="trailing" id="Jfk-xM-HzC"/>
                                             <constraint firstItem="auY-Hw-Osh" firstAttribute="leading" secondItem="vyo-b7-tDE" secondAttribute="leading" id="PGl-DY-e6p"/>
+                                            <constraint firstAttribute="bottom" secondItem="MfL-Yc-f0k" secondAttribute="bottom" id="Q5J-w3-cDU"/>
+                                            <constraint firstItem="MfL-Yc-f0k" firstAttribute="height" secondItem="vyo-b7-tDE" secondAttribute="height" multiplier="0.5" id="TLD-5G-irc"/>
+                                            <constraint firstItem="MfL-Yc-f0k" firstAttribute="width" secondItem="vyo-b7-tDE" secondAttribute="width" multiplier="0.5" id="Ydi-uK-yRD"/>
+                                            <constraint firstAttribute="trailing" secondItem="MfL-Yc-f0k" secondAttribute="trailing" id="gIa-FS-SBh"/>
                                             <constraint firstItem="auY-Hw-Osh" firstAttribute="top" secondItem="vyo-b7-tDE" secondAttribute="top" id="qUV-9x-2k6"/>
                                         </constraints>
                                     </view>
