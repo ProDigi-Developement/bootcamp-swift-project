@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 public class ExampleViewController: UIViewController {
+    
     @IBOutlet private weak var tableView: UITableView!
     
     override public func viewDidLoad() {

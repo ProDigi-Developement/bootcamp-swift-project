@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		453C86B21FDB529B006CAF55 /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453C86B11FDB529B006CAF55 /* ProjectViewController.swift */; };
 		9529AC321FB392A3000C9BDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9529AC311FB392A3000C9BDC /* AppDelegate.swift */; };
 		9529AC341FB392A3000C9BDC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9529AC331FB392A3000C9BDC /* MainViewController.swift */; };
 		9529AC371FB392A3000C9BDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9529AC351FB392A3000C9BDC /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		453C86B11FDB529B006CAF55 /* ProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewController.swift; sourceTree = "<group>"; };
 		9529AC2E1FB392A3000C9BDC /* Course Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Course Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9529AC311FB392A3000C9BDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9529AC331FB392A3000C9BDC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +51,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		453C86AD1FDB5236006CAF55 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				453C86AE1FDB5247006CAF55 /* View */,
+				453C86AF1FDB524D006CAF55 /* Controller */,
+				453C86B01FDB5252006CAF55 /* Model */,
+			);
+			path = Project;
+			sourceTree = "<group>";
+		};
+		453C86AE1FDB5247006CAF55 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				453C86B11FDB529B006CAF55 /* ProjectViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		453C86AF1FDB524D006CAF55 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		453C86B01FDB5252006CAF55 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		9529AC251FB392A1000C9BDC = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +106,7 @@
 				9529AC311FB392A3000C9BDC /* AppDelegate.swift */,
 				9529AC381FB392A3000C9BDC /* Assets.xcassets */,
 				9529AC4F1FB3B29A000C9BDC /* Example */,
+				453C86AD1FDB5236006CAF55 /* Project */,
 				9529AC3A1FB392A3000C9BDC /* LaunchScreen.storyboard */,
 				9529AC351FB392A3000C9BDC /* Main.storyboard */,
 				9529AC491FB3A5F4000C9BDC /* View */,
@@ -219,6 +254,7 @@
 				9529AC4E1FB3AC48000C9BDC /* DefaultButtonCell.swift in Sources */,
 				9529AC451FB3A20A000C9BDC /* Person.swift in Sources */,
 				9529AC341FB392A3000C9BDC /* MainViewController.swift in Sources */,
+				453C86B21FDB529B006CAF55 /* ProjectViewController.swift in Sources */,
 				9529AC321FB392A3000C9BDC /* AppDelegate.swift in Sources */,
 				9529AC531FB3B2EE000C9BDC /* ExampleViewController.swift in Sources */,
 				9529AC581FB3B7E3000C9BDC /* PersonCell.swift in Sources */,
@@ -361,8 +397,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D7365P545W;
 				INFOPLIST_FILE = "Course Project/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.alfredofernandes.CourseProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alfredorfernandes.CourseProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -376,8 +413,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D7365P545W;
 				INFOPLIST_FILE = "Course Project/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.alfredofernandes.CourseProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alfredorfernandes.CourseProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;

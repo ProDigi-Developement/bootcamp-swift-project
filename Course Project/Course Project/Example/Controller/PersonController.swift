@@ -25,6 +25,7 @@ final class PersonController {
     }
     
     func fetchListInfo(onSuccess: @escaping SuccessScenario, onFail: @escaping FailScenario) {
+        
         guard let urlRequest = URL(string: url) else {
             onFail("Not possible to create the URL object")
             return
