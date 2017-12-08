@@ -42,11 +42,18 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BNT-ua-PhO">
+                                        <rect key="frame" x="187.5" y="149.5" width="187.5" height="149.5"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="QC8-b4-hNj" firstAttribute="top" secondItem="mZr-q8-2W8" secondAttribute="top" constant="8" id="8wf-6V-Wih"/>
+                                    <constraint firstItem="BNT-ua-PhO" firstAttribute="height" secondItem="mZr-q8-2W8" secondAttribute="height" multiplier="0.5" id="F50-RF-vfo"/>
                                     <constraint firstItem="QC8-b4-hNj" firstAttribute="leading" secondItem="mZr-q8-2W8" secondAttribute="leading" constant="8" id="Owk-Fc-858"/>
+                                    <constraint firstAttribute="trailing" secondItem="BNT-ua-PhO" secondAttribute="trailing" id="YrE-6n-v1t"/>
+                                    <constraint firstItem="BNT-ua-PhO" firstAttribute="width" secondItem="mZr-q8-2W8" secondAttribute="width" multiplier="0.5" id="Zw1-L3-DSM"/>
+                                    <constraint firstAttribute="bottom" secondItem="BNT-ua-PhO" secondAttribute="bottom" id="fj7-4W-3EE"/>
                                 </constraints>
                             </view>
                         </subviews>
