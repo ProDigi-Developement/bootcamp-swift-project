@@ -76,6 +76,32 @@
             </objects>
             <point key="canvasLocation" x="930" y="187"/>
         </scene>
+        <!--Example 3-->
+        <scene sceneID="ADW-YE-E99">
+            <objects>
+                <viewController id="H9O-yh-7VJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tNK-NL-F5p">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1p9-oo-IiS">
+                                <rect key="frame" x="139" y="144.5" width="96" height="30"/>
+                                <state key="normal" title="Center Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1p9-oo-IiS" firstAttribute="centerX" secondItem="gOG-WJ-0iR" secondAttribute="centerX" id="Zzg-17-fhB"/>
+                            <constraint firstItem="1p9-oo-IiS" firstAttribute="centerY" secondItem="gOG-WJ-0iR" secondAttribute="centerY" multiplier="0.5" id="xx1-nY-1ae"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gOG-WJ-0iR"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Example 3" id="XNf-Oi-s3o"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KZl-km-3oR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="929" y="893"/>
+        </scene>
         <!--Example 1-->
         <scene sceneID="nSP-kT-sfu">
             <objects>
@@ -147,6 +173,7 @@
                     <connections>
                         <segue destination="blg-5O-yAa" kind="relationship" relationship="viewControllers" id="GX5-Wb-YS9"/>
                         <segue destination="xdg-DO-2Dp" kind="relationship" relationship="viewControllers" id="VGN-Zd-SCF"/>
+                        <segue destination="H9O-yh-7VJ" kind="relationship" relationship="viewControllers" id="uuP-6L-b5e"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kF1-zN-yss" userLabel="First Responder" sceneMemberID="firstResponder"/>
