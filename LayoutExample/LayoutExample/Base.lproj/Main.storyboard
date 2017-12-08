@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -94,12 +95,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OpD-Ic-vip">
+                                <rect key="frame" x="187.5" y="478.5" width="187.5" height="139.5"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="NPo-1Q-NWe" firstAttribute="centerY" secondItem="gOG-WJ-0iR" secondAttribute="centerY" constant="10" id="CfN-9g-EKD"/>
+                            <constraint firstItem="OpD-Ic-vip" firstAttribute="bottom" secondItem="gOG-WJ-0iR" secondAttribute="bottom" id="O5Z-dc-fQj"/>
+                            <constraint firstItem="OpD-Ic-vip" firstAttribute="leading" secondItem="gOG-WJ-0iR" secondAttribute="centerX" id="QQz-Yi-P53"/>
                             <constraint firstItem="NPo-1Q-NWe" firstAttribute="leading" secondItem="gOG-WJ-0iR" secondAttribute="leading" constant="10" id="XsJ-I0-fjP"/>
                             <constraint firstItem="1p9-oo-IiS" firstAttribute="centerX" secondItem="gOG-WJ-0iR" secondAttribute="centerX" id="Zzg-17-fhB"/>
+                            <constraint firstItem="OpD-Ic-vip" firstAttribute="trailing" secondItem="gOG-WJ-0iR" secondAttribute="trailing" id="iiB-EW-KR3"/>
+                            <constraint firstItem="OpD-Ic-vip" firstAttribute="top" secondItem="gOG-WJ-0iR" secondAttribute="centerY" multiplier="1.5" id="mOK-1a-ddc"/>
                             <constraint firstItem="1p9-oo-IiS" firstAttribute="centerY" secondItem="gOG-WJ-0iR" secondAttribute="centerY" multiplier="0.5" id="xx1-nY-1ae"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gOG-WJ-0iR"/>
