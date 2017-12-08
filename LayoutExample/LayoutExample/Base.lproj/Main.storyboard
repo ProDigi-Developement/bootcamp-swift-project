@@ -38,7 +38,7 @@
                                 <rect key="frame" x="0.0" y="319" width="375" height="299"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label on top left" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QC8-b4-hNj">
-                                        <rect key="frame" x="8" y="8" width="124" height="21"/>
+                                        <rect key="frame" x="10" y="10" width="124" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -50,9 +50,9 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="QC8-b4-hNj" firstAttribute="top" secondItem="mZr-q8-2W8" secondAttribute="top" constant="8" id="8wf-6V-Wih"/>
+                                    <constraint firstItem="QC8-b4-hNj" firstAttribute="top" secondItem="mZr-q8-2W8" secondAttribute="top" constant="10" id="8wf-6V-Wih"/>
                                     <constraint firstItem="BNT-ua-PhO" firstAttribute="height" secondItem="mZr-q8-2W8" secondAttribute="height" multiplier="0.5" id="F50-RF-vfo"/>
-                                    <constraint firstItem="QC8-b4-hNj" firstAttribute="leading" secondItem="mZr-q8-2W8" secondAttribute="leading" constant="8" id="Owk-Fc-858"/>
+                                    <constraint firstItem="QC8-b4-hNj" firstAttribute="leading" secondItem="mZr-q8-2W8" secondAttribute="leading" constant="10" id="Owk-Fc-858"/>
                                     <constraint firstAttribute="trailing" secondItem="BNT-ua-PhO" secondAttribute="trailing" id="YrE-6n-v1t"/>
                                     <constraint firstItem="BNT-ua-PhO" firstAttribute="width" secondItem="mZr-q8-2W8" secondAttribute="width" multiplier="0.5" id="Zw1-L3-DSM"/>
                                     <constraint firstAttribute="bottom" secondItem="BNT-ua-PhO" secondAttribute="bottom" id="fj7-4W-3EE"/>
@@ -60,6 +60,7 @@
                                 </constraints>
                             </view>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="iD4-DW-iL4" firstAttribute="trailing" secondItem="mZr-q8-2W8" secondAttribute="trailing" id="Bij-nZ-TaQ"/>
                             <constraint firstItem="UPf-th-Zbr" firstAttribute="top" secondItem="iD4-DW-iL4" secondAttribute="top" id="HrL-jA-csA"/>
@@ -140,7 +141,7 @@
                                         <rect key="frame" x="0.0" y="299" width="375" height="299"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label on top left" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auY-Hw-Osh">
-                                                <rect key="frame" x="8" y="8" width="359" height="20.5"/>
+                                                <rect key="frame" x="10" y="10" width="357" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -153,12 +154,12 @@
                                         <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="auY-Hw-Osh" secondAttribute="trailing" constant="8" id="Jfk-xM-HzC"/>
-                                            <constraint firstItem="auY-Hw-Osh" firstAttribute="leading" secondItem="vyo-b7-tDE" secondAttribute="leading" constant="8" id="PGl-DY-e6p"/>
+                                            <constraint firstItem="auY-Hw-Osh" firstAttribute="leading" secondItem="vyo-b7-tDE" secondAttribute="leading" constant="10" id="PGl-DY-e6p"/>
                                             <constraint firstAttribute="bottom" secondItem="MfL-Yc-f0k" secondAttribute="bottom" id="Q5J-w3-cDU"/>
                                             <constraint firstItem="MfL-Yc-f0k" firstAttribute="height" secondItem="vyo-b7-tDE" secondAttribute="height" multiplier="0.5" id="TLD-5G-irc"/>
                                             <constraint firstItem="MfL-Yc-f0k" firstAttribute="width" secondItem="vyo-b7-tDE" secondAttribute="width" multiplier="0.5" id="Ydi-uK-yRD"/>
                                             <constraint firstAttribute="trailing" secondItem="MfL-Yc-f0k" secondAttribute="trailing" id="gIa-FS-SBh"/>
-                                            <constraint firstItem="auY-Hw-Osh" firstAttribute="top" secondItem="vyo-b7-tDE" secondAttribute="top" constant="8" id="qUV-9x-2k6"/>
+                                            <constraint firstItem="auY-Hw-Osh" firstAttribute="top" secondItem="vyo-b7-tDE" secondAttribute="top" constant="10" id="qUV-9x-2k6"/>
                                         </constraints>
                                     </view>
                                 </subviews>
