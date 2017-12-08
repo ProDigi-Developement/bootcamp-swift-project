@@ -56,6 +56,7 @@
                                     <constraint firstAttribute="trailing" secondItem="BNT-ua-PhO" secondAttribute="trailing" id="YrE-6n-v1t"/>
                                     <constraint firstItem="BNT-ua-PhO" firstAttribute="width" secondItem="mZr-q8-2W8" secondAttribute="width" multiplier="0.5" id="Zw1-L3-DSM"/>
                                     <constraint firstAttribute="bottom" secondItem="BNT-ua-PhO" secondAttribute="bottom" id="fj7-4W-3EE"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="QC8-b4-hNj" secondAttribute="trailing" constant="20" symbolic="YES" id="nFc-kp-Lup"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -103,6 +104,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="NPo-1Q-NWe" firstAttribute="centerY" secondItem="gOG-WJ-0iR" secondAttribute="centerY" constant="10" id="CfN-9g-EKD"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="NPo-1Q-NWe" secondAttribute="trailing" constant="20" symbolic="YES" id="LUv-ju-P2W"/>
                             <constraint firstItem="OpD-Ic-vip" firstAttribute="bottom" secondItem="gOG-WJ-0iR" secondAttribute="bottom" id="O5Z-dc-fQj"/>
                             <constraint firstItem="OpD-Ic-vip" firstAttribute="leading" secondItem="gOG-WJ-0iR" secondAttribute="centerX" id="QQz-Yi-P53"/>
                             <constraint firstItem="NPo-1Q-NWe" firstAttribute="leading" secondItem="gOG-WJ-0iR" secondAttribute="leading" constant="10" id="XsJ-I0-fjP"/>
