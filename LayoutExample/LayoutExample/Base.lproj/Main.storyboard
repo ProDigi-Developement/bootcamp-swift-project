@@ -23,12 +23,20 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="299"/>
                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mZr-q8-2W8">
+                                <rect key="frame" x="0.0" y="319" width="375" height="299"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="iD4-DW-iL4" firstAttribute="trailing" secondItem="mZr-q8-2W8" secondAttribute="trailing" id="Bij-nZ-TaQ"/>
                             <constraint firstItem="UPf-th-Zbr" firstAttribute="top" secondItem="iD4-DW-iL4" secondAttribute="top" id="HrL-jA-csA"/>
                             <constraint firstItem="iD4-DW-iL4" firstAttribute="trailing" secondItem="UPf-th-Zbr" secondAttribute="trailing" id="N1a-xe-A2W"/>
+                            <constraint firstItem="iD4-DW-iL4" firstAttribute="bottom" secondItem="mZr-q8-2W8" secondAttribute="bottom" id="PO1-Lx-b7x"/>
                             <constraint firstItem="UPf-th-Zbr" firstAttribute="height" secondItem="iD4-DW-iL4" secondAttribute="height" multiplier="0.5" id="hb6-yd-fcg"/>
                             <constraint firstItem="UPf-th-Zbr" firstAttribute="leading" secondItem="iD4-DW-iL4" secondAttribute="leading" id="o2n-5D-zD8"/>
+                            <constraint firstItem="mZr-q8-2W8" firstAttribute="leading" secondItem="iD4-DW-iL4" secondAttribute="leading" id="tA0-Bj-HZh"/>
+                            <constraint firstItem="mZr-q8-2W8" firstAttribute="top" secondItem="UPf-th-Zbr" secondAttribute="bottom" id="yRq-az-v1F"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iD4-DW-iL4"/>
                     </view>
