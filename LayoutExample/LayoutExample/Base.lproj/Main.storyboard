@@ -35,7 +35,19 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mZr-q8-2W8" userLabel="View 2">
                                 <rect key="frame" x="0.0" y="319" width="375" height="299"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label on top left" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QC8-b4-hNj">
+                                        <rect key="frame" x="8" y="8" width="124" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="QC8-b4-hNj" firstAttribute="top" secondItem="mZr-q8-2W8" secondAttribute="top" constant="8" id="8wf-6V-Wih"/>
+                                    <constraint firstItem="QC8-b4-hNj" firstAttribute="leading" secondItem="mZr-q8-2W8" secondAttribute="leading" constant="8" id="Owk-Fc-858"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <constraints>
