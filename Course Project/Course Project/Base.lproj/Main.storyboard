@@ -64,10 +64,10 @@
             </objects>
             <point key="canvasLocation" x="1919.2" y="-743.47826086956525"/>
         </scene>
-        <!--View Controller-->
+        <!--Project View Controller-->
         <scene sceneID="F8z-ss-Tg5">
             <objects>
-                <viewController id="HFT-SF-AvS" sceneMemberID="viewController">
+                <viewController id="HFT-SF-AvS" customClass="ProjectViewController" customModule="Course_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="awI-B2-SEI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
