@@ -7,18 +7,31 @@
 //
 
 import Foundation
+import UIKit
 
 public class Project {
     
     public let firstName: String
     public let lastName: String
+    public let email: String
+    public let pictureUrl: String?
     
-    init(firstName: String, lastName: String) {
-        self.firstName = ""
-        self.lastName = ""
+    init(firstName: String, lastName: String, email: String) {
+        self.firstName = firstName
+        self.lastName = lastName
+        self.email = email
+        self.pictureUrl = ""
+    }
+    
+    init(firstName: String, lastName: String, email: String, pictureUrl: String) {
+        self.firstName = firstName
+        self.lastName = lastName
+        self.email = email
+        self.pictureUrl = pictureUrl
     }
     
     public func fullName() -> String {
-        return "\(self.firstName) \(self.lastName)"
+        return "\(self.firstName.capitalized) \(self.lastName.capitalized)"
     }
+    
 }
