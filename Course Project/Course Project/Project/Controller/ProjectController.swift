@@ -15,7 +15,7 @@ final class ProjectController {
     public private(set) var list: [Project]
     public static let sharedInstance = ProjectController()
     public var selectedUser: Project? = nil
-    private let url: String = "https://randomuser.me/api/?results=25"
+    private let url: String = "https://randomuser.me/api/?results=25&seed=alfredo"
     
     private init() {
         self.list = [Project]()
