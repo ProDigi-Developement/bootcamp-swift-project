@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		16054B091FE431DC00569967 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16054B081FE431DC00569967 /* MasterViewController.swift */; };
+		16054B0B1FE43B9500569967 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16054B0A1FE43B9500569967 /* User.swift */; };
 		9529AC321FB392A3000C9BDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9529AC311FB392A3000C9BDC /* AppDelegate.swift */; };
 		9529AC341FB392A3000C9BDC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9529AC331FB392A3000C9BDC /* MainViewController.swift */; };
 		9529AC371FB392A3000C9BDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9529AC351FB392A3000C9BDC /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		16054B081FE431DC00569967 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		16054B0A1FE43B9500569967 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9529AC2E1FB392A3000C9BDC /* Course Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Course Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9529AC311FB392A3000C9BDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9529AC331FB392A3000C9BDC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 		16054B071FE42FA900569967 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				16054B0A1FE43B9500569967 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 				9529AC451FB3A20A000C9BDC /* Person.swift in Sources */,
 				9529AC341FB392A3000C9BDC /* MainViewController.swift in Sources */,
 				9529AC321FB392A3000C9BDC /* AppDelegate.swift in Sources */,
+				16054B0B1FE43B9500569967 /* User.swift in Sources */,
 				9529AC531FB3B2EE000C9BDC /* ExampleViewController.swift in Sources */,
 				9529AC581FB3B7E3000C9BDC /* PersonCell.swift in Sources */,
 			);
