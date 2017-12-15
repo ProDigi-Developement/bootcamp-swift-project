@@ -49,6 +49,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16054B041FE42F6600569967 /* AraceliProject */ = {
+			isa = PBXGroup;
+			children = (
+				16054B071FE42FA900569967 /* Model */,
+				16054B061FE42F9E00569967 /* Controller */,
+				16054B051FE42F9600569967 /* View */,
+			);
+			path = AraceliProject;
+			sourceTree = "<group>";
+		};
+		16054B051FE42F9600569967 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		16054B061FE42F9E00569967 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		16054B071FE42FA900569967 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		9529AC251FB392A1000C9BDC = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +99,7 @@
 		9529AC301FB392A3000C9BDC /* Course Project */ = {
 			isa = PBXGroup;
 			children = (
+				16054B041FE42F6600569967 /* AraceliProject */,
 				9529AC3D1FB392A3000C9BDC /* Info.plist */,
 				9529AC311FB392A3000C9BDC /* AppDelegate.swift */,
 				9529AC381FB392A3000C9BDC /* Assets.xcassets */,
