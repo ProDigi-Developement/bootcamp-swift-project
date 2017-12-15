@@ -9,10 +9,12 @@
 import UIKit
 
 class PersonCell: UITableViewCell {
+    
     @IBOutlet private weak var nameLabel: UILabel!
     
     public func fillCell(withPerson person: Person) {
         self.nameLabel.text = person.fullName()
     }
+    
 }
 
