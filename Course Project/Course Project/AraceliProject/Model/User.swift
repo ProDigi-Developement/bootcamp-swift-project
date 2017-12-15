@@ -9,24 +9,25 @@
 import UIKit
 
 class User: Person {
-    public var address: String
-    public var city: String
-    public var state: String
-    public var postcode: String
-    public var country: String
-    public var pictureURL: String
-    public var picture: UIImage
+    public let address: String
+    public let city: String
+    public let state: String
+    public let postcode: String
+    public let country: String
+    public let pictureURL: String
+    public let iconURL: String
+    public var picture: UIImage? = nil
+    public var icon: UIImage? = nil
     
     init(_ firstName: String, _ lastName: String, _ email: String, _ address: String, _ city: String,
-         _ state: String, _ postcode: String, _ country: String, _ pictureURL: String) {
-        self.firstName = firstName
-        self.lastName = lastName
-        self.email = email
+         _ state: String, _ postcode: String, _ country: String, _ pictureURL: String, _ iconURL: String) {
         self.address = address
         self.city = city
         self.state = state
         self.postcode = postcode
         self.country = country
         self.pictureURL = pictureURL
+        self.iconURL = iconURL
+        super.init(firstName: firstName, lastName: lastName, email: email)
     }
 }
