@@ -158,6 +158,21 @@
             </objects>
             <point key="canvasLocation" x="1917.5999999999999" y="24.384236453201972"/>
         </scene>
+        <!--Detail-->
+        <scene sceneID="UpK-80-ZVN">
+            <objects>
+                <viewController storyboardIdentifier="detailView" title="Detail" id="nra-yQ-UOK" customClass="DetailViewController" customModule="Course_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2bd-bs-4wb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="N0o-iW-Ty5"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WJH-Dy-4zD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2719" y="24"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="xN2-Ry-zgi">
             <objects>

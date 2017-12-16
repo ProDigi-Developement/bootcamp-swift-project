@@ -66,13 +66,18 @@ extension ProjectViewController: UICollectionViewDelegate {
     public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         let person = ProjectController.sharedInstance.list[indexPath.row]
-
+        
+        let detailView: DetailViewController = storyboard?.instantiateViewController(withIdentifier: "detailView") as! DetailViewController
+        
+        self.navigationController?.present(detailView, animated: true, completion: nil)
+        
+        // Alert
+        /*
         let alertController = UIAlertController(title: "Person \(person.firstName)", message: "You selected \(person.fullName())\n His/Her e-mail is \(person.email)", preferredStyle: .alert)
-
         let okAction = UIAlertAction(title: "Ok", style: .default, handler:nil)
         alertController.addAction(okAction)
-
         self.present(alertController, animated: true, completion: nil)
+         */
     }
 }
 

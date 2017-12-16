@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		453C86B21FDB529B006CAF55 /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453C86B11FDB529B006CAF55 /* ProjectViewController.swift */; };
+		453E286F1FE4A041003BBDA3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453E286E1FE4A041003BBDA3 /* DetailViewController.swift */; };
 		4573EE3E1FE2D06000DA5834 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4573EE3D1FE2D06000DA5834 /* Project.swift */; };
 		4573EE431FE2DE5200DA5834 /* ProjectCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4573EE421FE2DE5200DA5834 /* ProjectCollectionViewCell.swift */; };
 		4573EE471FE2F94500DA5834 /* ProjectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4573EE461FE2F94500DA5834 /* ProjectController.swift */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		453C86B11FDB529B006CAF55 /* ProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewController.swift; sourceTree = "<group>"; };
+		453E286E1FE4A041003BBDA3 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		4573EE3D1FE2D06000DA5834 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		4573EE421FE2DE5200DA5834 /* ProjectCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCollectionViewCell.swift; sourceTree = "<group>"; };
 		4573EE461FE2F94500DA5834 /* ProjectController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectController.swift; sourceTree = "<group>"; };
@@ -70,8 +72,9 @@
 		453C86AE1FDB5247006CAF55 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				453C86B11FDB529B006CAF55 /* ProjectViewController.swift */,
 				4573EE3F1FE2DDF900DA5834 /* Collection */,
+				453C86B11FDB529B006CAF55 /* ProjectViewController.swift */,
+				453E286E1FE4A041003BBDA3 /* DetailViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				4573EE431FE2DE5200DA5834 /* ProjectCollectionViewCell.swift in Sources */,
 				9529AC481FB3A58E000C9BDC /* PersonController.swift in Sources */,
 				9529AC4E1FB3AC48000C9BDC /* DefaultButtonCell.swift in Sources */,
+				453E286F1FE4A041003BBDA3 /* DetailViewController.swift in Sources */,
 				9529AC451FB3A20A000C9BDC /* Person.swift in Sources */,
 				9529AC341FB392A3000C9BDC /* MainViewController.swift in Sources */,
 				453C86B21FDB529B006CAF55 /* ProjectViewController.swift in Sources */,
