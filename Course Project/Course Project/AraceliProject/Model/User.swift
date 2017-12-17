@@ -31,7 +31,7 @@ class User: Person {
     
     public func fullAddress() -> String {
         let separator = ", "
-        return address + separator + city + separator + state + separator + country
+        return address + separator + country
     }
 }
 
