@@ -11,7 +11,7 @@ import MapKit
 
 class MasterViewController: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
-    var mapItems: [MKMapItem] = []
+    private var annotations: [MKAnnotation] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +33,7 @@ class MasterViewController: UIViewController {
     
     private func placeUsers(_ list:[User]) {
         let request = MKLocalSearchRequest()
+        var count = 0
         for user in list {
             request.naturalLanguageQuery = user.fullAddress()
             request.region = mapView.region
@@ -49,9 +50,12 @@ class MasterViewController: UIViewController {
                 pointAnnotation.title = user.fullName()
                 pointAnnotation.coordinate = CLLocationCoordinate2D(latitude: response!.boundingRegion.center.latitude, longitude:     response!.boundingRegion.center.longitude)
                 
-                let pinAnnotationView = MKPinAnnotationView(annotation: pointAnnotation, reuseIdentifier: nil)
-                self.mapView.centerCoordinate = pointAnnotation.coordinate
-                self.mapView.addAnnotation(pinAnnotationView.annotation!)
+                self.annotations.append(pointAnnotation)
+                
+                count += 1
+                if count == list.count {
+                    self.mapView.showAnnotations(self.annotations, animated: true)
+                }
             }
         }
     }
