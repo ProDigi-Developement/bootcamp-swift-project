@@ -11,17 +11,34 @@ import MapKit
 
 class MasterViewController: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
+    var list: [User] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         mapView.delegate = self
+        
+        print("Fetching user list...")
+        UserController.sharedInstance.fetchUserList(onSuccess: onSuccessScenario, onFail: onFailScenario)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    private func onSuccessScenario() {
+        DispatchQueue.main.async {
+            self.list = UserController.sharedInstance.userList
+            for user in self.list {
+                print(user.fullName())
+            }
+        }
+    }
+    
+    private func onFailScenario(errorMessage: String) {
+        print(errorMessage)
     }
     
 
