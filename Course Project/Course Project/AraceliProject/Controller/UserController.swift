@@ -8,11 +8,11 @@
 
 import UIKit
 
-class UserController {
+final class UserController {
     private let url = "https://randomuser.me/api/?results=20&inc=name,email,location,nat,picture&nat=ca&noinfo"
     public private(set) var userList: [User]
     
-    init() {
+    private init() {
         userList = []
     }
     
@@ -21,7 +21,8 @@ class UserController {
             onFail("Not possible to create the URL object")
             return
         }
-        let session = URLSession(configuration: URLSessionConfiguration.default)
+        let config = URLSessionConfiguration.default
+        let session = URLSession(configuration: config)
         
         let task = session.dataTask(with: urlRequest, completionHandler: { (data, response, error) in
             if let error = error {
