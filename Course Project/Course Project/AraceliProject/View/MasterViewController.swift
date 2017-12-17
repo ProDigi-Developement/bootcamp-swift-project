@@ -7,13 +7,16 @@
 //
 
 import UIKit
+import MapKit
 
 class MasterViewController: UIViewController {
-
+    @IBOutlet weak var mapView: MKMapView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        mapView.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,5 +34,8 @@ class MasterViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+}
+
+extension MasterViewController: MKMapViewDelegate {
 
 }

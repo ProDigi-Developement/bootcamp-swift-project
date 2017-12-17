@@ -71,13 +71,22 @@
                     <view key="view" contentMode="scaleToFill" id="5G1-Jy-tqI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="9oN-8P-umP">
+                                <rect key="frame" x="16" y="64" width="343" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="11w-oK-hdP"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="9oN-8P-umP" id="OTr-do-7Wg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jn6-gq-7w0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1919" y="18"/>
+            <point key="canvasLocation" x="1917.5999999999999" y="17.541229385307346"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xN2-Ry-zgi">
