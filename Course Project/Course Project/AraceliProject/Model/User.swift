@@ -28,6 +28,11 @@ class User: Person {
         self.iconURL = iconURL
         super.init(firstName: firstName, lastName: lastName, email: email)
     }
+    
+    public func fullAddress() -> String {
+        let separator = ", "
+        return address + separator + city + separator + state + separator + country
+    }
 }
 
 extension User {
