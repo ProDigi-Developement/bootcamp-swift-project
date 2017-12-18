@@ -43,7 +43,7 @@ extension User {
         
         let config = URLSessionConfiguration.default
         let session = URLSession(configuration: config)
-        
+        let semaphore = DispatchSemaphore(value: 0)
         (session.dataTask(with: iconURL) { (data, response, error) in
             if let error = error {
                 print("Error: \(error)")
@@ -60,7 +60,9 @@ extension User {
                 } else {
                     print("Error: Data is null")
                 }
+                semaphore.signal()
             }
         }).resume()
+        semaphore.wait()
     }
 }
