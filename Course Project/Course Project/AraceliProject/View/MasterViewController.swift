@@ -46,11 +46,10 @@ class MasterViewController: UIViewController {
                     return
                 }
                 
-                let pointAnnotation = MKPointAnnotation()
-                pointAnnotation.title = user.fullName()
-                pointAnnotation.coordinate = CLLocationCoordinate2D(latitude: response!.boundingRegion.center.latitude, longitude:     response!.boundingRegion.center.longitude)
+                let annotation = UserPointAnnotation(user)
+                annotation.coordinate = CLLocationCoordinate2D(latitude: response!.boundingRegion.center.latitude, longitude: response!.boundingRegion.center.longitude)
                 
-                self.annotations.append(pointAnnotation)
+                self.annotations.append(annotation)
                 
                 count += 1
                 if count == list.count {
@@ -68,27 +67,22 @@ extension MasterViewController: MKMapViewDelegate {
         }
         
         let identifier = "marker"
+        var view = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKMarkerAnnotationView
         
-        if #available(iOS 11.0, *) {
-            var view = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
-                as? MKMarkerAnnotationView
-            
-            if view == nil {
-                view = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
-            } else {
-                view?.annotation = annotation
-            }
-            return view
+        if view == nil {
+            view = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
         } else {
-            var view = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
-                as? MKPinAnnotationView
-            
-            if view == nil {
-                view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
-            } else {
-                view?.annotation = annotation
-            }
-            return view
+            view?.annotation = annotation
         }
+        
+        if let userAnnotation = annotation as? UserPointAnnotation {
+            userAnnotation.title = userAnnotation.user.fullName()
+            userAnnotation.subtitle = userAnnotation.user.fullAddress()
+            let iconView: UIImageView = UIImageView(image: userAnnotation.user.icon)
+            view?.leftCalloutAccessoryView = iconView
+            view?.canShowCallout = true
+        }
+        return view
+        
     }
 }
