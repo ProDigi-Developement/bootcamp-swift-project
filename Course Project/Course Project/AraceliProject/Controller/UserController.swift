@@ -9,7 +9,7 @@
 import UIKit
 
 final class UserController {
-    private let url = "https://randomuser.me/api/?results=10&inc=name,email,location,nat,picture&nat=ca&noinfo"
+    private let url = "https://randomuser.me/api/?results=10&inc=name,email,gender,cell,location,nat,picture&nat=ca&noinfo"
     public static let sharedInstance = UserController()
     public private(set) var userList: [User]
     
@@ -59,6 +59,8 @@ final class UserController {
                     let firstName = names["first"] as? String,
                     let lastName = names["last"] as? String,
                     let email = jsonUser["email"] as? String,
+                    let gender = jsonUser["gender"] as? String,
+                    let cell = jsonUser["cell"] as? String,
                     let location = jsonUser["location"] as? [String:Any],
                     let address = location["street"] as? String,
                     let country = jsonUser["nat"] as? String,
@@ -68,7 +70,7 @@ final class UserController {
                     print("Not possible to find the user data.")
                     break
                 }
-                list.append(User(firstName, lastName, email, address, country, iconURL))
+                list.append(User(firstName, lastName, email, gender, cell, address, country, iconURL))
             }
         } else {
             print("No results tag found in response JSON.")

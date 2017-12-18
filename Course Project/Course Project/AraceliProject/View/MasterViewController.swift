@@ -65,6 +65,11 @@ extension MasterViewController: MKMapViewDelegate {
             view?.leftCalloutAccessoryView = iconView
             view?.rightCalloutAccessoryView = UIButton(type: UIButtonType.infoLight)
             view?.canShowCallout = true
+            if userAnnotation.user.gender == "male" {
+                view?.markerTintColor = UIColor.blue
+            } else {
+                view?.markerTintColor = UIColor.red
+            }
         }
         return view
     }
@@ -80,6 +85,6 @@ extension MasterViewController: MKMapViewDelegate {
     }
     
     private func configureMessage(_ user: User) -> String {
-        return "\(user.email)\n\(user.address), \(user.country)"
+        return "\(user.cell)\n\(user.email)\n\(user.address), \(user.country)"
     }
 }
