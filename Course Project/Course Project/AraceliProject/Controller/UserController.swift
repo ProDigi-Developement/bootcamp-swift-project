@@ -9,7 +9,7 @@
 import UIKit
 
 final class UserController {
-    private let url = "https://randomuser.me/api/?results=20&inc=name,email,location,nat,picture&nat=ca&noinfo"
+    private let url = "https://randomuser.me/api/?results=10&inc=name,email,location,nat,picture&nat=ca&noinfo"
     public static let sharedInstance = UserController()
     public private(set) var userList: [User]
     
