@@ -10,19 +10,12 @@ import UIKit
 
 class User: Person {
     public let address: String
-    public let city: String
-    public let state: String
-    public let postcode: String
     public let country: String
     public let iconURL: String
     public var icon: UIImage?
     
-    init(_ firstName: String, _ lastName: String, _ email: String, _ address: String, _ city: String,
-         _ state: String, _ postcode: String, _ country: String, _ iconURL: String) {
+    init(_ firstName: String, _ lastName: String, _ email: String, _ address: String, _ country: String, _ iconURL: String) {
         self.address = address
-        self.city = city
-        self.state = state
-        self.postcode = postcode
         self.country = country
         self.iconURL = iconURL
         

@@ -61,9 +61,6 @@ final class UserController {
                     let email = jsonUser["email"] as? String,
                     let location = jsonUser["location"] as? [String:Any],
                     let address = location["street"] as? String,
-                    let city = location["city"] as? String,
-                    let state = location["state"] as? String,
-                    let postcode = location["postcode"] as? Int,
                     let country = jsonUser["nat"] as? String,
                     let imageUrls = jsonUser["picture"] as? [String:Any],
                     let iconURL = imageUrls["thumbnail"] as? String
@@ -71,7 +68,7 @@ final class UserController {
                     print("Not possible to find the user data.")
                     break
                 }
-                list.append(User(firstName, lastName, email, address, city, state, String(postcode), country, iconURL))
+                list.append(User(firstName, lastName, email, address, country, iconURL))
             }
         } else {
             print("No results tag found in response JSON.")
