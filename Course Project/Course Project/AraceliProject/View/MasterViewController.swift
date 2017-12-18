@@ -77,12 +77,26 @@ extension MasterViewController: MKMapViewDelegate {
         
         if let userAnnotation = annotation as? UserPointAnnotation {
             userAnnotation.title = userAnnotation.user.fullName()
-            userAnnotation.subtitle = userAnnotation.user.fullAddress()
+            userAnnotation.subtitle = userAnnotation.user.address
             let iconView: UIImageView = UIImageView(image: userAnnotation.user.icon)
             view?.leftCalloutAccessoryView = iconView
+            view?.rightCalloutAccessoryView = UIButton(type: UIButtonType.infoLight)
             view?.canShowCallout = true
         }
         return view
+    }
+    
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        guard let annotation = view.annotation as? UserPointAnnotation else {
+            return
+        }
         
+        let alert = UIAlertController(title: annotation.user.fullName(), message: configureMessage(annotation.user), preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Close", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    private func configureMessage(_ user: User) -> String {
+        return "\(user.email)\n\(user.address), \(user.city)\n\(user.state), \(user.country)"
     }
 }
