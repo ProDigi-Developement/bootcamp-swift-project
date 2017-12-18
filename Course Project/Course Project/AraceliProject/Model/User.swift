@@ -16,6 +16,8 @@ class User: Person {
     public let country: String
     public let pictureURL: String
     public let iconURL: String
+    public var picture: UIImage?
+    public var icon: UIImage?
     
     init(_ firstName: String, _ lastName: String, _ email: String, _ address: String, _ city: String,
          _ state: String, _ postcode: String, _ country: String, _ pictureURL: String, _ iconURL: String) {
@@ -26,7 +28,10 @@ class User: Person {
         self.country = country
         self.pictureURL = pictureURL
         self.iconURL = iconURL
+        
         super.init(firstName: firstName, lastName: lastName, email: email)
+        
+        loadImages()
     }
     
     public func fullAddress() -> String {
@@ -36,24 +41,16 @@ class User: Person {
 }
 
 extension User {
-    
-    public var picture: UIImage? {
-        return loadImage(imageUrl: pictureURL)
-    }
-    public var icon: UIImage? {
-        return loadImage(imageUrl: iconURL)
-    }
-
-    private func loadImage(imageUrl: String) -> UIImage? {
-        guard let url = URL(string: imageUrl) else {
+    private func loadImages() {
+        guard let iconURL = URL(string: iconURL), let pictureURL = URL(string: pictureURL) else {
             print("Error: Not possible to create the URL object")
-            return nil
+            return
         }
-        var image: UIImage?
+        
         let config = URLSessionConfiguration.default
         let session = URLSession(configuration: config)
         
-        (session.dataTask(with: url) { (data, response, error) in
+        (session.dataTask(with: iconURL) { (data, response, error) in
             if let error = error {
                 print("Error: \(error)")
             } else {
@@ -65,15 +62,30 @@ extension User {
                 }
                 
                 if let data = data {
-                    image = UIImage(data: data)
+                    self.icon = UIImage(data: data)
                 } else {
                     print("Error: Data is null")
                 }
             }
         }).resume()
         
-        return image
+        (session.dataTask(with: pictureURL) { (data, response, error) in
+            if let error = error {
+                print("Error: \(error)")
+            } else {
+                guard let httpResponse = response as? HTTPURLResponse,
+                    httpResponse.statusCode == 200
+                    else {
+                        print("Error: Error on fetch.")
+                        return
+                }
+                
+                if let data = data {
+                    self.picture = UIImage(data: data)
+                } else {
+                    print("Error: Data is null")
+                }
+            }
+        }).resume()
     }
-    
-    
 }
