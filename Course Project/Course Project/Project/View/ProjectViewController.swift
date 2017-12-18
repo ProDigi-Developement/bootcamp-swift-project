@@ -53,6 +53,7 @@ extension ProjectViewController: UICollectionViewDataSource {
         
         projectCell.imageCell.image(fromUrl: person.pictureUrl!)
         projectCell.imageCell.layer.cornerRadius = 60
+        projectCell.imageCell.layer.cornerRadius = projectCell.bounds.width/2
         projectCell.imageCell.layer.masksToBounds = true
         
         return projectCell
@@ -68,6 +69,8 @@ extension ProjectViewController: UICollectionViewDelegate {
         let person = ProjectController.sharedInstance.list[indexPath.row]
         
         let detailView: DetailViewController = storyboard?.instantiateViewController(withIdentifier: "detailView") as! DetailViewController
+        
+        detailView.person = person
         
         self.navigationController?.present(detailView, animated: true, completion: nil)
         
