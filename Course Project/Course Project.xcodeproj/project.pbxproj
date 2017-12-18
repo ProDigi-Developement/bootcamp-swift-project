@@ -11,6 +11,7 @@
 		16054B0B1FE43B9500569967 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16054B0A1FE43B9500569967 /* User.swift */; };
 		16054B0D1FE468E500569967 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16054B0C1FE468E500569967 /* UserController.swift */; };
 		16054B0F1FE7424A00569967 /* UserPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16054B0E1FE7424A00569967 /* UserPointAnnotation.swift */; };
+		16054B111FE83E0D00569967 /* RandomLocationGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16054B101FE83E0D00569967 /* RandomLocationGenerator.swift */; };
 		9529AC321FB392A3000C9BDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9529AC311FB392A3000C9BDC /* AppDelegate.swift */; };
 		9529AC341FB392A3000C9BDC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9529AC331FB392A3000C9BDC /* MainViewController.swift */; };
 		9529AC371FB392A3000C9BDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9529AC351FB392A3000C9BDC /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 		16054B0A1FE43B9500569967 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		16054B0C1FE468E500569967 /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
 		16054B0E1FE7424A00569967 /* UserPointAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPointAnnotation.swift; sourceTree = "<group>"; };
+		16054B101FE83E0D00569967 /* RandomLocationGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomLocationGenerator.swift; sourceTree = "<group>"; };
 		9529AC2E1FB392A3000C9BDC /* Course Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Course Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9529AC311FB392A3000C9BDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9529AC331FB392A3000C9BDC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				16054B0C1FE468E500569967 /* UserController.swift */,
+				16054B101FE83E0D00569967 /* RandomLocationGenerator.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				16054B0D1FE468E500569967 /* UserController.swift in Sources */,
 				16054B0F1FE7424A00569967 /* UserPointAnnotation.swift in Sources */,
 				9529AC4E1FB3AC48000C9BDC /* DefaultButtonCell.swift in Sources */,
+				16054B111FE83E0D00569967 /* RandomLocationGenerator.swift in Sources */,
 				9529AC451FB3A20A000C9BDC /* Person.swift in Sources */,
 				9529AC341FB392A3000C9BDC /* MainViewController.swift in Sources */,
 				9529AC321FB392A3000C9BDC /* AppDelegate.swift in Sources */,

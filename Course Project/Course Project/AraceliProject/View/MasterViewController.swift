@@ -33,28 +33,13 @@ class MasterViewController: UIViewController {
     }
     
     private func placeUsers(_ list:[User]) {
-        var count = 0
         for user in list {
-            let geocoder = CLGeocoder()
-            geocoder.geocodeAddressString(user.fullAddress()) { placemarks, error in
-                guard let placemarks = placemarks else {
-                    let alertController = UIAlertController(title: nil, message: user.fullName() + " address not found", preferredStyle: UIAlertControllerStyle.alert)
-                    alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default, handler: nil))
-                    self.present(alertController, animated: true, completion: nil)
-                    return
-                }
-                let placemark = placemarks[0]
-                let annotation = UserPointAnnotation(user)
-                annotation.coordinate = CLLocationCoordinate2D(latitude: placemark.location!.coordinate.latitude, longitude: placemark.location!.coordinate.longitude)
-                
-                self.annotations.append(annotation)
-                
-                count += 1
-                if count == list.count {
-                    self.mapView.showAnnotations(self.annotations, animated: true)
-                }
-            }
+            let annotation = UserPointAnnotation(user)
+            let coordinate = RandomLocationGenerator.generateCoordinates()
+            annotation.coordinate = CLLocationCoordinate2D(latitude: coordinate.0, longitude: coordinate.1)
+            annotations.append(annotation)
         }
+        mapView.showAnnotations(self.annotations, animated: true)
     }
 }
 
