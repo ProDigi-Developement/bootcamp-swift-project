@@ -50,10 +50,10 @@ extension MasterViewController: MKMapViewDelegate {
         }
         
         let identifier = "marker"
-        var view = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKMarkerAnnotationView
+        var view = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)// as? MKPinAnnotationView
         
         if view == nil {
-            view = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+            view = MKAnnotationView(annotation: annotation, reuseIdentifier: identifier)
         } else {
             view?.annotation = annotation
         }
@@ -62,16 +62,30 @@ extension MasterViewController: MKMapViewDelegate {
             userAnnotation.title = userAnnotation.user.fullName()
             userAnnotation.subtitle = userAnnotation.user.address
             let iconView: UIImageView = UIImageView(image: userAnnotation.user.icon)
+            iconView.layer.cornerRadius = iconView.frame.size.width / 2
+            iconView.clipsToBounds = true
             view?.leftCalloutAccessoryView = iconView
             view?.rightCalloutAccessoryView = UIButton(type: UIButtonType.infoLight)
             view?.canShowCallout = true
-            if userAnnotation.user.gender == "male" {
-                view?.markerTintColor = UIColor.blue
-            } else {
-                view?.markerTintColor = UIColor.red
-            }
+            view?.image = maskRoundedImage(userAnnotation.user.icon!)
         }
         return view
+    }
+    
+    func maskRoundedImage(_ image: UIImage) -> UIImage? {
+        let imageView: UIImageView = UIImageView(image: image)
+        var layer: CALayer = CALayer()
+        layer = imageView.layer
+        
+        layer.masksToBounds = true
+        layer.cornerRadius = imageView.frame.size.width / 2
+        
+        UIGraphicsBeginImageContext(imageView.bounds.size)
+        layer.render(in: UIGraphicsGetCurrentContext()!)
+        let roundedImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return roundedImage
     }
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
