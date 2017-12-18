@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import CoreLocation
 
 class MasterViewController: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
@@ -32,22 +33,19 @@ class MasterViewController: UIViewController {
     }
     
     private func placeUsers(_ list:[User]) {
-        let request = MKLocalSearchRequest()
         var count = 0
         for user in list {
-            request.naturalLanguageQuery = user.fullAddress()
-            request.region = mapView.region
-            let search = MKLocalSearch(request: request)
-            search.start { (response, error) -> Void in
-                if response == nil {
+            let geocoder = CLGeocoder()
+            geocoder.geocodeAddressString(user.fullAddress()) { placemarks, error in
+                guard let placemarks = placemarks else {
                     let alertController = UIAlertController(title: nil, message: user.fullName() + " address not found", preferredStyle: UIAlertControllerStyle.alert)
                     alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default, handler: nil))
                     self.present(alertController, animated: true, completion: nil)
                     return
                 }
-                
+                let placemark = placemarks[0]
                 let annotation = UserPointAnnotation(user)
-                annotation.coordinate = CLLocationCoordinate2D(latitude: response!.boundingRegion.center.latitude, longitude: response!.boundingRegion.center.longitude)
+                annotation.coordinate = CLLocationCoordinate2D(latitude: placemark.location!.coordinate.latitude, longitude: placemark.location!.coordinate.longitude)
                 
                 self.annotations.append(annotation)
                 
@@ -97,6 +95,6 @@ extension MasterViewController: MKMapViewDelegate {
     }
     
     private func configureMessage(_ user: User) -> String {
-        return "\(user.email)\n\(user.address), \(user.city)\n\(user.state), \(user.country)"
+        return "\(user.email)\n\(user.address), \(user.country)"
     }
 }
