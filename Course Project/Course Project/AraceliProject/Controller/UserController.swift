@@ -66,13 +66,12 @@ final class UserController {
                     let postcode = location["postcode"] as? Int,
                     let country = jsonUser["nat"] as? String,
                     let imageUrls = jsonUser["picture"] as? [String:Any],
-                    let pictureURL = imageUrls["large"] as? String,
                     let iconURL = imageUrls["thumbnail"] as? String
                 else {
                     print("Not possible to find the user data.")
                     break
                 }
-                list.append(User(firstName, lastName, email, address, city, state, String(postcode), country, pictureURL, iconURL))
+                list.append(User(firstName, lastName, email, address, city, state, String(postcode), country, iconURL))
             }
         } else {
             print("No results tag found in response JSON.")

@@ -14,24 +14,21 @@ class User: Person {
     public let state: String
     public let postcode: String
     public let country: String
-    public let pictureURL: String
     public let iconURL: String
-    public var picture: UIImage?
     public var icon: UIImage?
     
     init(_ firstName: String, _ lastName: String, _ email: String, _ address: String, _ city: String,
-         _ state: String, _ postcode: String, _ country: String, _ pictureURL: String, _ iconURL: String) {
+         _ state: String, _ postcode: String, _ country: String, _ iconURL: String) {
         self.address = address
         self.city = city
         self.state = state
         self.postcode = postcode
         self.country = country
-        self.pictureURL = pictureURL
         self.iconURL = iconURL
         
         super.init(firstName: firstName, lastName: lastName, email: email)
         
-        loadImages()
+        loadImage()
     }
     
     public func fullAddress() -> String {
@@ -41,8 +38,8 @@ class User: Person {
 }
 
 extension User {
-    private func loadImages() {
-        guard let iconURL = URL(string: iconURL), let pictureURL = URL(string: pictureURL) else {
+    private func loadImage() {
+        guard let iconURL = URL(string: iconURL) else {
             print("Error: Not possible to create the URL object")
             return
         }
@@ -63,25 +60,6 @@ extension User {
                 
                 if let data = data {
                     self.icon = UIImage(data: data)
-                } else {
-                    print("Error: Data is null")
-                }
-            }
-        }).resume()
-        
-        (session.dataTask(with: pictureURL) { (data, response, error) in
-            if let error = error {
-                print("Error: \(error)")
-            } else {
-                guard let httpResponse = response as? HTTPURLResponse,
-                    httpResponse.statusCode == 200
-                    else {
-                        print("Error: Error on fetch.")
-                        return
-                }
-                
-                if let data = data {
-                    self.picture = UIImage(data: data)
                 } else {
                     print("Error: Data is null")
                 }
