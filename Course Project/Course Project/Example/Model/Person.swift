@@ -9,6 +9,7 @@
 import Foundation
 
 public class Person {
+    
     public let firstName: String
     public let lastName: String
     public let email: String
@@ -22,4 +23,5 @@ public class Person {
     public func fullName() -> String {
         return "\(self.firstName) \(self.lastName)"
     }
+    
 }
