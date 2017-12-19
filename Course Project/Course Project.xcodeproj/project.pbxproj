@@ -12,6 +12,11 @@
 		16054B0D1FE468E500569967 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16054B0C1FE468E500569967 /* UserController.swift */; };
 		16054B0F1FE7424A00569967 /* UserPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16054B0E1FE7424A00569967 /* UserPointAnnotation.swift */; };
 		16054B111FE83E0D00569967 /* RandomLocationGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16054B101FE83E0D00569967 /* RandomLocationGenerator.swift */; };
+		453C86B21FDB529B006CAF55 /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453C86B11FDB529B006CAF55 /* ProjectViewController.swift */; };
+		453E286F1FE4A041003BBDA3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453E286E1FE4A041003BBDA3 /* DetailViewController.swift */; };
+		4573EE3E1FE2D06000DA5834 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4573EE3D1FE2D06000DA5834 /* Project.swift */; };
+		4573EE431FE2DE5200DA5834 /* ProjectCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4573EE421FE2DE5200DA5834 /* ProjectCollectionViewCell.swift */; };
+		4573EE471FE2F94500DA5834 /* ProjectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4573EE461FE2F94500DA5834 /* ProjectController.swift */; };
 		9529AC321FB392A3000C9BDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9529AC311FB392A3000C9BDC /* AppDelegate.swift */; };
 		9529AC341FB392A3000C9BDC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9529AC331FB392A3000C9BDC /* MainViewController.swift */; };
 		9529AC371FB392A3000C9BDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9529AC351FB392A3000C9BDC /* Main.storyboard */; };
@@ -32,6 +37,11 @@
 		16054B0C1FE468E500569967 /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
 		16054B0E1FE7424A00569967 /* UserPointAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPointAnnotation.swift; sourceTree = "<group>"; };
 		16054B101FE83E0D00569967 /* RandomLocationGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomLocationGenerator.swift; sourceTree = "<group>"; };
+		453C86B11FDB529B006CAF55 /* ProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewController.swift; sourceTree = "<group>"; };
+		453E286E1FE4A041003BBDA3 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		4573EE3D1FE2D06000DA5834 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		4573EE421FE2DE5200DA5834 /* ProjectCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCollectionViewCell.swift; sourceTree = "<group>"; };
+		4573EE461FE2F94500DA5834 /* ProjectController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectController.swift; sourceTree = "<group>"; };
 		9529AC2E1FB392A3000C9BDC /* Course Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Course Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9529AC311FB392A3000C9BDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9529AC331FB392A3000C9BDC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +83,22 @@
 			isa = PBXGroup;
 			children = (
 				16054B081FE431DC00569967 /* MasterViewController.swift */,
+		453C86AD1FDB5236006CAF55 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				453C86AE1FDB5247006CAF55 /* View */,
+				453C86AF1FDB524D006CAF55 /* Controller */,
+				453C86B01FDB5252006CAF55 /* Model */,
+			);
+			path = Project;
+			sourceTree = "<group>";
+		};
+		453C86AE1FDB5247006CAF55 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4573EE3F1FE2DDF900DA5834 /* Collection */,
+				453C86B11FDB529B006CAF55 /* ProjectViewController.swift */,
+				453E286E1FE4A041003BBDA3 /* DetailViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -85,14 +111,36 @@
 			);
 			path = Controller;
 			sourceTree = "<group>";
+		453C86AF1FDB524D006CAF55 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4573EE461FE2F94500DA5834 /* ProjectController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
 		};
 		16054B071FE42FA900569967 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				16054B0A1FE43B9500569967 /* User.swift */,
 				16054B0E1FE7424A00569967 /* UserPointAnnotation.swift */,
+    );
+    path = Model;
+    sourceTree = "<group>";
+		453C86B01FDB5252006CAF55 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4573EE3D1FE2D06000DA5834 /* Project.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		4573EE3F1FE2DDF900DA5834 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				4573EE421FE2DE5200DA5834 /* ProjectCollectionViewCell.swift */,
+			);
+			path = Collection;
 			sourceTree = "<group>";
 		};
 		9529AC251FB392A1000C9BDC = {
@@ -119,6 +167,7 @@
 				9529AC311FB392A3000C9BDC /* AppDelegate.swift */,
 				9529AC381FB392A3000C9BDC /* Assets.xcassets */,
 				9529AC4F1FB3B29A000C9BDC /* Example */,
+				453C86AD1FDB5236006CAF55 /* Project */,
 				9529AC3A1FB392A3000C9BDC /* LaunchScreen.storyboard */,
 				9529AC351FB392A3000C9BDC /* Main.storyboard */,
 				9529AC491FB3A5F4000C9BDC /* View */,
@@ -263,17 +312,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				16054B091FE431DC00569967 /* MasterViewController.swift in Sources */,
+				4573EE431FE2DE5200DA5834 /* ProjectCollectionViewCell.swift in Sources */,
 				9529AC481FB3A58E000C9BDC /* PersonController.swift in Sources */,
 				16054B0D1FE468E500569967 /* UserController.swift in Sources */,
 				16054B0F1FE7424A00569967 /* UserPointAnnotation.swift in Sources */,
 				9529AC4E1FB3AC48000C9BDC /* DefaultButtonCell.swift in Sources */,
 				16054B111FE83E0D00569967 /* RandomLocationGenerator.swift in Sources */,
+				453E286F1FE4A041003BBDA3 /* DetailViewController.swift in Sources */,
 				9529AC451FB3A20A000C9BDC /* Person.swift in Sources */,
 				9529AC341FB392A3000C9BDC /* MainViewController.swift in Sources */,
+				453C86B21FDB529B006CAF55 /* ProjectViewController.swift in Sources */,
 				9529AC321FB392A3000C9BDC /* AppDelegate.swift in Sources */,
 				16054B0B1FE43B9500569967 /* User.swift in Sources */,
 				9529AC531FB3B2EE000C9BDC /* ExampleViewController.swift in Sources */,
 				9529AC581FB3B7E3000C9BDC /* PersonCell.swift in Sources */,
+				4573EE471FE2F94500DA5834 /* ProjectController.swift in Sources */,
+				4573EE3E1FE2D06000DA5834 /* Project.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,13 +465,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 48556QRETB;
+				DEVELOPMENT_TEAM = D7365P545W;
 				INFOPLIST_FILE = "Course Project/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.prodigi.Course-Project";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alfredorfernandes.CourseProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -426,13 +481,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 48556QRETB;
+				DEVELOPMENT_TEAM = D7365P545W;
 				INFOPLIST_FILE = "Course Project/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.prodigi.Course-Project";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alfredorfernandes.CourseProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
