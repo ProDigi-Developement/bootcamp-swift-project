@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 public class ExampleViewController: UIViewController {
+    
     @IBOutlet private weak var tableView: UITableView!
     
     override public func viewDidLoad() {
@@ -37,6 +38,7 @@ public class ExampleViewController: UIViewController {
 }
 
 extension ExampleViewController: UITableViewDataSource {
+    
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
@@ -61,7 +63,9 @@ extension ExampleViewController: UITableViewDataSource {
 }
 
 extension ExampleViewController: UITableViewDelegate {
+    
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         let person = PersonController.sharedInstance.list[indexPath.row]
         let alertController = UIAlertController(title: "Person \(person.firstName)", message: "You selected \(person.fullName())\n His/Her email is \(person.email)", preferredStyle: .alert)
         

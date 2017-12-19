@@ -6,15 +6,15 @@
 //  Copyright © 2017 ProDigi. All rights reserved.
 //
 
-import Foundation
-
 import SystemConfiguration
 import Foundation
+import UIKit
 
 typealias SuccessScenario = () -> Void
 typealias FailScenario = (String) -> Void
 
 final class PersonController {
+    
     public private(set) var list: [Person]
     public static let sharedInstance = PersonController()
     public var selectedUser: Person? = nil
@@ -25,6 +25,7 @@ final class PersonController {
     }
     
     func fetchListInfo(onSuccess: @escaping SuccessScenario, onFail: @escaping FailScenario) {
+        
         guard let urlRequest = URL(string: url) else {
             onFail("Not possible to create the URL object")
             return
@@ -57,6 +58,7 @@ final class PersonController {
     }
     
     private func convertToUsers(withData data: Data) throws -> [Person] {
+        
         var tempList = [Person]()
         
         let json = try! JSONSerialization.jsonObject(with: data, options: []) as! [String:Any]
