@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -72,12 +73,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="9oN-8P-umP">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="9oN-8P-umP">
                                 <rect key="frame" x="16" y="64" width="343" height="603"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9oN-8P-umP" firstAttribute="trailing" secondItem="5G1-Jy-tqI" secondAttribute="trailingMargin" id="1E8-Wq-SD0"/>
+                            <constraint firstItem="9oN-8P-umP" firstAttribute="bottom" secondItem="11w-oK-hdP" secondAttribute="bottom" id="3cY-7h-VwS"/>
+                            <constraint firstItem="9oN-8P-umP" firstAttribute="leading" secondItem="5G1-Jy-tqI" secondAttribute="leadingMargin" id="LSC-gm-dux"/>
+                            <constraint firstItem="9oN-8P-umP" firstAttribute="top" secondItem="11w-oK-hdP" secondAttribute="top" id="Qk7-k9-Z7Z"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="11w-oK-hdP"/>
                     </view>
                     <connections>
