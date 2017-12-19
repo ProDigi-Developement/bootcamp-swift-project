@@ -9,7 +9,7 @@
 import UIKit
 
 class MainViewController: UITableViewController {
-    private let projects: [String] = ["ProDigi", "Araceli Teixeira", "Alfredo Fernandes"]
+    private let projects: [String] = ["ProDigi", "Alfredo Fernandes", "Araceli Teixeira",]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,12 +41,12 @@ class MainViewController: UITableViewController {
         var segueId: String = ""
         
         switch indexPath.row {
-        case 0:
+        case 0: // ProDigi Example
             segueId = "showProDigiScreen"
-        case 1:
-            segueId = "showAraceliTeixeiraScreen"
-        case 2:
+        case 1: // Alfredo
             segueId = "showProjectScreen"
+        case 2: // Araceli
+            segueId = "showAraceliTeixeiraScreen"
         default:
             print("No specific action.")
         }
