@@ -24,6 +24,11 @@
 		9529AC531FB3B2EE000C9BDC /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9529AC521FB3B2EE000C9BDC /* ExampleViewController.swift */; };
 		9529AC561FB3B7D9000C9BDC /* PersonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9529AC551FB3B7D9000C9BDC /* PersonCell.xib */; };
 		9529AC581FB3B7E3000C9BDC /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9529AC571FB3B7E3000C9BDC /* PersonCell.swift */; };
+		95665F121FE9C82B001DE090 /* RandomLocationGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95665F0B1FE9C82B001DE090 /* RandomLocationGenerator.swift */; };
+		95665F131FE9C82B001DE090 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95665F0C1FE9C82B001DE090 /* UserController.swift */; };
+		95665F141FE9C82B001DE090 /* UserPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95665F0E1FE9C82B001DE090 /* UserPointAnnotation.swift */; };
+		95665F151FE9C82B001DE090 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95665F0F1FE9C82B001DE090 /* User.swift */; };
+		95665F161FE9C82B001DE090 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95665F111FE9C82B001DE090 /* MasterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +51,11 @@
 		9529AC521FB3B2EE000C9BDC /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
 		9529AC551FB3B7D9000C9BDC /* PersonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonCell.xib; sourceTree = "<group>"; };
 		9529AC571FB3B7E3000C9BDC /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
+		95665F0B1FE9C82B001DE090 /* RandomLocationGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomLocationGenerator.swift; sourceTree = "<group>"; };
+		95665F0C1FE9C82B001DE090 /* UserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		95665F0E1FE9C82B001DE090 /* UserPointAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPointAnnotation.swift; sourceTree = "<group>"; };
+		95665F0F1FE9C82B001DE090 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		95665F111FE9C82B001DE090 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +132,7 @@
 		9529AC301FB392A3000C9BDC /* Course Project */ = {
 			isa = PBXGroup;
 			children = (
+				95665F091FE9C82B001DE090 /* AraceliProject */,
 				9529AC3D1FB392A3000C9BDC /* Info.plist */,
 				9529AC311FB392A3000C9BDC /* AppDelegate.swift */,
 				9529AC381FB392A3000C9BDC /* Assets.xcassets */,
@@ -196,6 +207,42 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		95665F091FE9C82B001DE090 /* AraceliProject */ = {
+			isa = PBXGroup;
+			children = (
+				95665F0A1FE9C82B001DE090 /* Controller */,
+				95665F0D1FE9C82B001DE090 /* Model */,
+				95665F101FE9C82B001DE090 /* View */,
+			);
+			path = AraceliProject;
+			sourceTree = "<group>";
+		};
+		95665F0A1FE9C82B001DE090 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				95665F0B1FE9C82B001DE090 /* RandomLocationGenerator.swift */,
+				95665F0C1FE9C82B001DE090 /* UserController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		95665F0D1FE9C82B001DE090 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				95665F0E1FE9C82B001DE090 /* UserPointAnnotation.swift */,
+				95665F0F1FE9C82B001DE090 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		95665F101FE9C82B001DE090 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				95665F111FE9C82B001DE090 /* MasterViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -228,7 +275,7 @@
 				TargetAttributes = {
 					9529AC2D1FB392A2000C9BDC = {
 						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -274,9 +321,14 @@
 				9529AC481FB3A58E000C9BDC /* PersonController.swift in Sources */,
 				9529AC4E1FB3AC48000C9BDC /* DefaultButtonCell.swift in Sources */,
 				453E286F1FE4A041003BBDA3 /* DetailViewController.swift in Sources */,
+				95665F151FE9C82B001DE090 /* User.swift in Sources */,
+				95665F141FE9C82B001DE090 /* UserPointAnnotation.swift in Sources */,
+				95665F131FE9C82B001DE090 /* UserController.swift in Sources */,
 				9529AC451FB3A20A000C9BDC /* Person.swift in Sources */,
 				9529AC341FB392A3000C9BDC /* MainViewController.swift in Sources */,
+				95665F121FE9C82B001DE090 /* RandomLocationGenerator.swift in Sources */,
 				453C86B21FDB529B006CAF55 /* ProjectViewController.swift in Sources */,
+				95665F161FE9C82B001DE090 /* MasterViewController.swift in Sources */,
 				9529AC321FB392A3000C9BDC /* AppDelegate.swift in Sources */,
 				9529AC531FB3B2EE000C9BDC /* ExampleViewController.swift in Sources */,
 				9529AC581FB3B7E3000C9BDC /* PersonCell.swift in Sources */,
@@ -418,13 +470,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D7365P545W;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Course Project/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.alfredorfernandes.CourseProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prodigi.courseproject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -434,13 +487,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D7365P545W;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Course Project/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.alfredorfernandes.CourseProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prodigi.courseproject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
