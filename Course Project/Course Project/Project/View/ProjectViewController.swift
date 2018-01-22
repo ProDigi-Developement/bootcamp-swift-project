@@ -86,14 +86,14 @@ extension ProjectViewController: UICollectionViewDelegate {
 
 
 extension UIImageView {
-    
+
     public func image(fromUrl urlString: String) {
-        
+
         guard let url = URL(string: urlString) else {
             print("Couldn't create URL from \(urlString)")
             return
         }
-        
+
         let theTask = URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let response = data {
                 DispatchQueue.main.async {
@@ -104,3 +104,4 @@ extension UIImageView {
         theTask.resume()
     }
 }
+

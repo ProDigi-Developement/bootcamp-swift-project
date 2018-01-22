@@ -29,6 +29,11 @@
 		95665F141FE9C82B001DE090 /* UserPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95665F0E1FE9C82B001DE090 /* UserPointAnnotation.swift */; };
 		95665F151FE9C82B001DE090 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95665F0F1FE9C82B001DE090 /* User.swift */; };
 		95665F161FE9C82B001DE090 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95665F111FE9C82B001DE090 /* MasterViewController.swift */; };
+		CC1BD7132013307D001CE146 /* PersonZip.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1BD7122013307D001CE146 /* PersonZip.swift */; };
+		CC1BD71520133103001CE146 /* PersonZipController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1BD71420133103001CE146 /* PersonZipController.swift */; };
+		CC1D376B201530A200BA979F /* DetailTopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1D376A201530A200BA979F /* DetailTopViewController.swift */; };
+		CC9BB645201291F4008FFE1F /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9BB644201291F4008FFE1F /* TopViewController.swift */; };
+		CC9BB64720129F2C008FFE1F /* TopViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9BB64620129F2C008FFE1F /* TopViewTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +61,11 @@
 		95665F0E1FE9C82B001DE090 /* UserPointAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPointAnnotation.swift; sourceTree = "<group>"; };
 		95665F0F1FE9C82B001DE090 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		95665F111FE9C82B001DE090 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		CC1BD7122013307D001CE146 /* PersonZip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonZip.swift; sourceTree = "<group>"; };
+		CC1BD71420133103001CE146 /* PersonZipController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonZipController.swift; sourceTree = "<group>"; };
+		CC1D376A201530A200BA979F /* DetailTopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTopViewController.swift; sourceTree = "<group>"; };
+		CC9BB644201291F4008FFE1F /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		CC9BB64620129F2C008FFE1F /* TopViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +142,7 @@
 		9529AC301FB392A3000C9BDC /* Course Project */ = {
 			isa = PBXGroup;
 			children = (
+				CC9BB64120129194008FFE1F /* YashProject */,
 				95665F091FE9C82B001DE090 /* AraceliProject */,
 				9529AC3D1FB392A3000C9BDC /* Info.plist */,
 				9529AC311FB392A3000C9BDC /* AppDelegate.swift */,
@@ -243,6 +254,42 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		CC1BD71120133039001CE146 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CC1BD7122013307D001CE146 /* PersonZip.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CC9BB64120129194008FFE1F /* YashProject */ = {
+			isa = PBXGroup;
+			children = (
+				CC1BD71120133039001CE146 /* Model */,
+				CC9BB643201291D0008FFE1F /* View */,
+				CC9BB642201291A5008FFE1F /* Controller */,
+			);
+			path = YashProject;
+			sourceTree = "<group>";
+		};
+		CC9BB642201291A5008FFE1F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CC1BD71420133103001CE146 /* PersonZipController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CC9BB643201291D0008FFE1F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CC9BB644201291F4008FFE1F /* TopViewController.swift */,
+				CC9BB64620129F2C008FFE1F /* TopViewTableViewCell.swift */,
+				CC1D376A201530A200BA979F /* DetailTopViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -275,7 +322,7 @@
 				TargetAttributes = {
 					9529AC2D1FB392A2000C9BDC = {
 						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -322,16 +369,21 @@
 				9529AC4E1FB3AC48000C9BDC /* DefaultButtonCell.swift in Sources */,
 				453E286F1FE4A041003BBDA3 /* DetailViewController.swift in Sources */,
 				95665F151FE9C82B001DE090 /* User.swift in Sources */,
+				CC1BD7132013307D001CE146 /* PersonZip.swift in Sources */,
+				CC1BD71520133103001CE146 /* PersonZipController.swift in Sources */,
 				95665F141FE9C82B001DE090 /* UserPointAnnotation.swift in Sources */,
 				95665F131FE9C82B001DE090 /* UserController.swift in Sources */,
 				9529AC451FB3A20A000C9BDC /* Person.swift in Sources */,
 				9529AC341FB392A3000C9BDC /* MainViewController.swift in Sources */,
 				95665F121FE9C82B001DE090 /* RandomLocationGenerator.swift in Sources */,
 				453C86B21FDB529B006CAF55 /* ProjectViewController.swift in Sources */,
+				CC1D376B201530A200BA979F /* DetailTopViewController.swift in Sources */,
 				95665F161FE9C82B001DE090 /* MasterViewController.swift in Sources */,
 				9529AC321FB392A3000C9BDC /* AppDelegate.swift in Sources */,
+				CC9BB64720129F2C008FFE1F /* TopViewTableViewCell.swift in Sources */,
 				9529AC531FB3B2EE000C9BDC /* ExampleViewController.swift in Sources */,
 				9529AC581FB3B7E3000C9BDC /* PersonCell.swift in Sources */,
+				CC9BB645201291F4008FFE1F /* TopViewController.swift in Sources */,
 				4573EE471FE2F94500DA5834 /* ProjectController.swift in Sources */,
 				4573EE3E1FE2D06000DA5834 /* Project.swift in Sources */,
 			);
@@ -470,8 +522,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TMAT8C254H;
 				INFOPLIST_FILE = "Course Project/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -487,8 +540,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TMAT8C254H;
 				INFOPLIST_FILE = "Course Project/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
