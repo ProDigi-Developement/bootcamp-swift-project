@@ -10,6 +10,6 @@
 
 Here's what it looks like in action.( Wait for GIF )
 
-![Alt Text](https://github.com/YASH12366/PayTrail/blob/master/PayTrailDemo.gif)
+![Alt Text](https://github.com/YASH12366/bootcamp-swift-project/blob/master/UserListDemo.gif)
 
 
