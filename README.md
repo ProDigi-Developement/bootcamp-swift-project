@@ -4,11 +4,11 @@
 
 **Here's what the following Application can do ( Open README.md for Demo )**
 
-* Quickly estimate federal and provincial taxes.
-* Calculate Employement Insuracnce, Vacation Pay, CPP 
-* Give estimate earnings for next month and total deduction.
+* Fetching User information from web API in JSON format.
+* Map kit to show user location on the map. 
+* Easy and simple user interface with customizes UI elements.
 
-Here's what it looks like in action. (UX IS IN EARLY STAGE)( Wait for GIF )
+Here's what it looks like in action.( Wait for GIF )
 
 ![Alt Text](https://github.com/YASH12366/PayTrail/blob/master/PayTrailDemo.gif)
 
