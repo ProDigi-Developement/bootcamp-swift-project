@@ -6,7 +6,7 @@
 
 * Fetching User information from web API in JSON format.
 * Map kit to show user location on the map. 
-* Easy and simple user interface with customizes UI elements.
+* Easy and simple user interface with customized UI elements.
 
 Here's what it looks like in action.( Wait for GIF )
 
