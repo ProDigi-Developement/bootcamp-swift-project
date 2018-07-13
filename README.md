@@ -1,15 +1,15 @@
-Project Boilerplate
-=====================
+# UX Demo
 
-Use this project as start point to build your own screen / project during the ProDigi Practical Developer Course.
+## List of active users and their information ##
 
-### Static Files
+**Here's what the following Application can do ( Open README.md for Demo )**
 
-Create your own folder and put everything related to your screen inside of it.
+* Fetching User information from web API in JSON format.
+* Map kit to show user location on the map. 
+* Easy and simple user interface with customized UI elements.
 
-For example, if you create a folder called `CaioScreen` you will be able to add other files / folders inside of it.
+Here's what it looks like in action.( Wait for GIF )
 
-### Dependencies
+![Alt Text](https://github.com/YASH12366/bootcamp-swift-project/blob/master/UserListDemo.gif)
 
-For those that want to use any third party framework please use [Carthage](https://github.com/Carthage/Carthage#carthage--)
-Just add your 3rd party framework directly to Cartfile and run Carthage.
+
